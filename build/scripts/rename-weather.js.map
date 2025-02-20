@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/rename-weather.js"],
+  "sourcesContent": ["const getWeather = async () => {\n    try {\n        const response = await fetch('https://api.weatherstack.com/current?access_key=6aea1fb5b0614f290ff9a0b696b93ff2&query=Khabarovsk');\n        if (!response.ok) {\n            throw new Error(`\u041E\u0448\u0438\u0431\u043A\u0430 HTTP: ${response.status}`);\n        }\n        const data = await response.json();\n        return data;\n    } catch (error) {\n        console.error(\"\u041F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430:\", error.message);\n        throw error;\n    }\n};\n\nexport {getWeather}"],
+  "mappings": ";AAAA,IAAM,aAAa,YAAY;AAC3B,MAAI;AACA,UAAM,WAAW,MAAM,MAAM,mGAAmG;AAChI,QAAI,CAAC,SAAS,IAAI;AACd,YAAM,IAAI,MAAM,8CAAgB,SAAS,MAAM,EAAE;AAAA,IACrD;AACA,UAAM,OAAO,MAAM,SAAS,KAAK;AACjC,WAAO;AAAA,EACX,SAAS,OAAO;AACZ,YAAQ,MAAM,gGAAqB,MAAM,OAAO;AAChD,UAAM;AAAA,EACV;AACJ;",
+  "names": []
+}

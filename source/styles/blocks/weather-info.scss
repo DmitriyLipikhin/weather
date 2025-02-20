@@ -1,0 +1,42 @@
+.weather-info__container {
+    padding: 37px 0 122px 116px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 916px;
+    justify-content: space-between;
+}
+
+.weather-info__temperature {
+    display: flex;
+}
+
+.weather-info__time-city {
+    margin-top: 47px;
+}
+
+.weather-info__city {
+    display: flex;
+    font-size: 60px;
+    align-items: end;
+}
+
+.weather-info__degrees {
+    font-size: 143px;
+}
+
+.weather-info__time {
+    font-size: 14px;
+}
+
+.weather-info__temperature::after {
+    background-image: url(../../icons/cloud.svg);
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    display: block;
+    content: "";
+    margin: 67px 0 0 30px;
+}
+
+

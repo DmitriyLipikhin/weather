@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script async src="./scripts/main.js" type="module"></script>
+  </head>
+  <body class="page__body">
+      <main class="main-container">
+        <div class="main-container__weather">
+          <section class="weather-info">
+            <div class="weather-info__container">
+              <div class="weather-info__logo">
+                <img class="weather-info__logo-image" src="./images/logo-2.svg" alt="Лого weather" width="90" height="47">
+              </div>
+              <div class="weather-info__temperature">
+                <span class="weather-info__degrees">12°</span>
+                <div class="weather-info__time-city">
+                  <span class="weather-info__city">London</span>
+                  <span class="weather-info__time"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="weather">
+            <div class="weather__container">
+              <div class="weather__city">
+                <button class="weather__city-button" type="button">Выбрать страну</button>
+              </div>
+              <div class="weather__details">
+                <h2 class="weather__details-title">Weather Details...</h2>
+                <p class="weather__details-current-weather">thunderstorm with light drizzle</p>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Temp max</dt>
+                  <dd class="weather__details-count weather__details-count-temp-feel">19°</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Temp min</dt>
+                  <dd class="weather__details-count weather__details-count-temp-min">15°</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Humadity</dt>
+                  <dd class="weather__details-count weather__details-count-humadity">58%</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Cloudy</dt>
+                  <dd class="weather__details-count weather__details-count-cloudy">86%</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Wind</dt>
+                  <dd class="weather__details-count weather__details-count-wind">5km/h</dd>
+                </dl>
+                </div>
+              </div>
+            </section></div>
+          
+        
+      </main>
+  </body>
+</html>

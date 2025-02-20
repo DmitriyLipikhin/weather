@@ -1,0 +1,70 @@
+.weather__container {
+    padding: 40px 35px 300px 35px;
+    width: 526px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(19px);
+}
+
+.weather__city-button {
+    width: 100%;
+    min-height: 50px;
+    background: none;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 41px;
+}
+
+.weather__details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.weather__details-title {
+    margin-bottom: 52px;
+}
+
+.weather__details-wrapper {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.weather__details-count {
+    margin: 0;
+    display: flex;
+}
+
+.weather__details-count::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: 24px 26px;
+    margin-left: 16px;
+}
+
+.weather__details-count-temp-feel::after {
+    background-image: url("../../icons/max-temp.svg");
+}
+
+.weather__details-count-temp-min::after {
+    background-image: url("../../icons/min-temp.svg");
+}
+
+.weather__details-count-humadity::after {
+    background-image: url("../../icons/humadity.svg");
+}
+
+.weather__details-count-cloudy::after {
+    background-image: url("../../icons/cloud.svg");
+}
+
+.weather__details-count-wind::after {
+    background-image: url("../../icons/wind.svg");
+}

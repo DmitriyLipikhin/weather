@@ -1,0 +1,15 @@
+.main-container__weather {
+    margin: 0; 
+    height: 100vh;
+    background-image: url("../../images/bg-weather@1x.jpg");
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+}
+
+@media (min-resolution: 2dppx) {
+    .main-container__weather {
+        background-image: url("../../images/bg-weather@2x.jpg");
+    }
+}
