@@ -15,9 +15,10 @@ const createTime = () => {
     }
 
     const currentDate = today.toLocaleDateString('ru-RU', option)
-    fieldDate.textContent = `${hours}:${minutes} ${currentDate}`;
+    return fieldDate.textContent = `${hours}:${minutes} ${currentDate}`;
 }
 
+console.log(createTime())
 
 const updateTime = () => {
     document.addEventListener('DOMContentLoaded', () => {
