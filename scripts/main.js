@@ -24,7 +24,7 @@ var updateTime = () => {
 var getWeather = async (city) => {
   console.log(city);
   try {
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=62e8139d4e7244d893b32610252002&q=${city}&aqi=no&lang=ru`);
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=62e8139d4e7244d893b32610252002&q=${city}&aqi=no&lang=ru`);
     if (!response.ok) {
       throw new Error(`\u041E\u0448\u0438\u0431\u043A\u0430 HTTP: ${response.status}`);
     }
