@@ -1,1 +1,25 @@
-var i=document.querySelector(".weather-info__time"),e=()=>{let t=new Date,n=t.getHours().toString().padStart(2,"0"),o=t.getMinutes().toString().padStart(2,"0"),r={weekday:"long",day:"numeric",month:"short",year:"numeric"},a=t.toLocaleDateString("ru-RU",r);i.textContent=`${n}:${o} ${a}`},c=()=>{document.addEventListener("DOMContentLoaded",()=>{e(),setInterval(e,1e3)})};export{c as updateTime};
+// source/scripts/index.js
+var fieldDate = document.querySelector(".weather-info__time");
+var createTime = () => {
+  let today = /* @__PURE__ */ new Date();
+  let hours = today.getHours().toString().padStart(2, "0");
+  let minutes = today.getMinutes().toString().padStart(2, "0");
+  const option = {
+    weekday: "long",
+    day: "numeric",
+    month: "short",
+    year: "numeric"
+  };
+  const currentDate = today.toLocaleDateString("ru-RU", option);
+  fieldDate.textContent = `${hours}:${minutes} ${currentDate}`;
+};
+var updateTime = () => {
+  document.addEventListener("DOMContentLoaded", () => {
+    createTime();
+    setInterval(createTime, 1e3);
+  });
+};
+export {
+  updateTime
+};
+//# sourceMappingURL=index.js.map
