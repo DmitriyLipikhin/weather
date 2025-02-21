@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/index.js"],
+  "sourcesContent": ["const fieldDate = document.querySelector('.weather-info__time');\n\n\nconst createTime = () => {\n    let today = new Date();\n\n    let hours = today.getHours().toString().padStart(2, '0');\n    let minutes = today.getMinutes().toString().padStart(2, '0'); \n\n    const option = {\n        weekday: 'long',\n        day: 'numeric',\n        month: 'short',\n        year: 'numeric',\n    }\n\n    const currentDate = today.toLocaleDateString('ru-RU', option)\n    fieldDate.textContent = `${hours}:${minutes} ${currentDate}`;\n}\n\n\nconst updateTime = () => {\n    document.addEventListener('DOMContentLoaded', () => {\n        createTime();\n        setInterval(createTime, 1000);\n    })\n}\n\nexport {updateTime};"],
+  "mappings": ";AAAA,IAAM,YAAY,SAAS,cAAc,qBAAqB;AAG9D,IAAM,aAAa,MAAM;AACrB,MAAI,QAAQ,oBAAI,KAAK;AAErB,MAAI,QAAQ,MAAM,SAAS,EAAE,SAAS,EAAE,SAAS,GAAG,GAAG;AACvD,MAAI,UAAU,MAAM,WAAW,EAAE,SAAS,EAAE,SAAS,GAAG,GAAG;AAE3D,QAAM,SAAS;AAAA,IACX,SAAS;AAAA,IACT,KAAK;AAAA,IACL,OAAO;AAAA,IACP,MAAM;AAAA,EACV;AAEA,QAAM,cAAc,MAAM,mBAAmB,SAAS,MAAM;AAC5D,YAAU,cAAc,GAAG,KAAK,IAAI,OAAO,IAAI,WAAW;AAC9D;AAGA,IAAM,aAAa,MAAM;AACrB,WAAS,iBAAiB,oBAAoB,MAAM;AAChD,eAAW;AACX,gBAAY,YAAY,GAAI;AAAA,EAChC,CAAC;AACL;",
+  "names": []
+}
