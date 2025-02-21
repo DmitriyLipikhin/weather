@@ -58,15 +58,6 @@ var distributesWeather = (weather) => {
   weatherDetailsIcon.style.backgroundImage = `url(${weather.current.condition.icon})`;
 };
 
-// source/scripts/country-weather.js
-var selectCountry = document.querySelector(".weather__city-select");
-var chooseCountry = () => {
-  selectCountry.addEventListener("change", () => {
-    const city = selectCountry.value;
-    changesCountry(city);
-  });
-};
-
 // source/scripts/main.js
 updateTime();
 chooseCountry();
@@ -75,7 +66,16 @@ var changesCountry = (city) => {
     distributesWeather(weather);
   });
 };
-export {
-  changesCountry
+
+// source/scripts/country-weather.js
+var selectCountry = document.querySelector(".weather__city-select");
+var chooseCountry = () => {
+  selectCountry.addEventListener("change", () => {
+    const city = selectCountry.value;
+    changesCountry(city);
+  });
 };
-//# sourceMappingURL=main.js.map
+export {
+  chooseCountry
+};
+//# sourceMappingURL=country-weather.js.map

@@ -1,7 +1,8 @@
 // source/scripts/get-weather.js
-var getWeather = async () => {
+var getWeather = async (city) => {
+  console.log(city);
   try {
-    const response = await fetch("https://api.weatherstack.com/current?access_key=6aea1fb5b0614f290ff9a0b696b93ff2&query=Khabarovsk");
+    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=62e8139d4e7244d893b32610252002&q=${city}&aqi=no&lang=ru`);
     if (!response.ok) {
       throw new Error(`\u041E\u0448\u0438\u0431\u043A\u0430 HTTP: ${response.status}`);
     }

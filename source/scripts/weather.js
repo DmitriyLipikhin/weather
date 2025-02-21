@@ -6,16 +6,18 @@ const weatherCloudy = document.querySelector('.weather__details-count-cloudy')
 const weatherCurrent = document.querySelector('.weather__details-current-weather')
 const weatherCity = document.querySelector('.weather-info__city')
 const weatherTemp = document.querySelector('.weather-info__degrees');
+const weatherDetailsIcon = document.querySelector('.weather__details-icon')
 
 const distributesWeather = (weather) => {
     weatherCity.textContent = `${weather.location.name}`;
-    weatherCurrent.textContent = `${weather.current.weather_descriptions}`;
-    weatherCloudy.textContent = `${weather.current.cloudcover}%`;
-    weatherTempFeel.textContent = `${weather.current.feelslike}`;
-    weatherTempMin.textContent = `${weather.current.temperature}`;
+    weatherCurrent.textContent = `${weather.current.condition.text}`;
+    weatherCloudy.textContent = `${weather.current.cloud}%`;
+    weatherTempFeel.textContent = `${weather.current.feelslike_c}`;
+    weatherTempMin.textContent = `${weather.current.temp_c}`;
     weatherHumadity.textContent = `${weather.current.humidity}%`;
-    weatherWind.textContent = `${weather.current.wind_speed} km/h`;
-    weatherTemp.textContent = `${weather.current.temperature}°`;
+    weatherWind.textContent = `${weather.current.wind_kph} км/ч`;
+    weatherTemp.textContent = `${Math.trunc(weather.current.temp_c)}°`;
+    weatherDetailsIcon.style.backgroundImage = `url(${weather.current.condition.icon})`;
 }
 
 export {distributesWeather};

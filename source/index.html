@@ -31,29 +31,54 @@
           <section class="weather">
             <div class="weather__container">
               <div class="weather__city">
-                <button class="weather__city-button" type="button">Выбрать страну</button>
+                <select class="weather__city-select" id="cities" name="cities">
+                  <option class="weather__city-option" value="">Выбрать город</option>
+                  <option class="weather__city-option" value="Moscow">Moscow</option>
+                  <option class="weather__city-option" value="Saint Petersburg">Saint Petersburg</option>
+                  <option class="weather__city-option" value="Novosibirsk">Novosibirsk</option>
+                  <option class="weather__city-option" value="Yekaterinburg">Yekaterinburg</option>
+                  <option class="weather__city-option" value="Kazan">Kazan</option>
+                  <option class="weather__city-option" value="Nizhny Novgorod">Nizhny Novgorod</option>
+                  <option class="weather__city-option" value="Chelyabinsk">Chelyabinsk</option>
+                  <option class="weather__city-option" value="Samara">Samara</option>
+                  <option class="weather__city-option" value="Omsk">Omsk</option>
+                  <option class="weather__city-option" value="Rostov-on-Don">Rostov-on-Don</option>
+                  <option class="weather__city-option" value="Krasnoyarsk">Krasnoyarsk</option>
+                  <option class="weather__city-option" value="Voronezh">Voronezh</option>
+                  <option class="weather__city-option" value="Perm">Perm</option>
+                  <option class="weather__city-option" value="Volgograd">Volgograd</option>
+                  <option class="weather__city-option" value="Krasnodar">Krasnodar</option>
+                  <option class="weather__city-option" value="Saratov">Saratov</option>
+                  <option class="weather__city-option" value="Tolyatti">Tolyatti</option>
+                  <option class="weather__city-option" value="Izhevsk">Izhevsk</option>
+                  <option class="weather__city-option" value="Ulyanovsk">Ulyanovsk</option>
+                  <option class="weather__city-option" value="Tomsk">Tomsk</option>
+                </select>
               </div>
               <div class="weather__details">
-                <h2 class="weather__details-title">Weather Details...</h2>
-                <p class="weather__details-current-weather">thunderstorm with light drizzle</p>
+                <h2 class="weather__details-title">Подробности о погоде</h2>
+                <div class="weather__details-wrapper">
+                  <p class="weather__details-current-weather">Ясно</p>
+                  <span class="weather__details-icon"></span>
+                </div>
                 <dl class="weather__details-wrapper">
-                  <dt class="weather__details-conditions">Temp max</dt>
+                  <dt class="weather__details-conditions">Мак. Температура</dt>
                   <dd class="weather__details-count weather__details-count-temp-feel">19°</dd>
                 </dl>
                 <dl class="weather__details-wrapper">
-                  <dt class="weather__details-conditions">Temp min</dt>
+                  <dt class="weather__details-conditions">Мин. Температура</dt>
                   <dd class="weather__details-count weather__details-count-temp-min">15°</dd>
                 </dl>
                 <dl class="weather__details-wrapper">
-                  <dt class="weather__details-conditions">Humadity</dt>
+                  <dt class="weather__details-conditions">Влажност</dt>
                   <dd class="weather__details-count weather__details-count-humadity">58%</dd>
                 </dl>
                 <dl class="weather__details-wrapper">
-                  <dt class="weather__details-conditions">Cloudy</dt>
+                  <dt class="weather__details-conditions">Облачность</dt>
                   <dd class="weather__details-count weather__details-count-cloudy">86%</dd>
                 </dl>
                 <dl class="weather__details-wrapper">
-                  <dt class="weather__details-conditions">Wind</dt>
+                  <dt class="weather__details-conditions">Скорость ветра</dt>
                   <dd class="weather__details-count weather__details-count-wind">5km/h</dd>
                 </dl>
                 </div>
