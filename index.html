@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script async src="./scripts/main.js" type="module"></script>
+  </head>
+  <body class="page__body">
+      <main class="main-container">
+        <div class="main-container__weather">
+          <section class="weather-info">
+            <div class="weather-info__container">
+              <div class="weather-info__logo">
+                <img class="weather-info__logo-image" src="./images/logo-2.svg" alt="Лого weather" width="90" height="47">
+              </div>
+              <div class="weather-info__temperature">
+                <span class="weather-info__degrees">12°</span>
+                <div class="weather-info__time-city">
+                  <span class="weather-info__city">London</span>
+                  <span class="weather-info__time"></span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="weather">
+            <div class="weather__container">
+              <div class="weather__city">
+                <select class="weather__city-select" id="cities" name="cities">
+                  <option class="weather__city-option" value="">Выбрать город</option>
+                  <option class="weather__city-option" value="Moscow">Moscow</option>
+                  <option class="weather__city-option" value="Saint Petersburg">Saint Petersburg</option>
+                  <option class="weather__city-option" value="Novosibirsk">Novosibirsk</option>
+                  <option class="weather__city-option" value="Yekaterinburg">Yekaterinburg</option>
+                  <option class="weather__city-option" value="Kazan">Kazan</option>
+                  <option class="weather__city-option" value="Nizhny Novgorod">Nizhny Novgorod</option>
+                  <option class="weather__city-option" value="Chelyabinsk">Chelyabinsk</option>
+                  <option class="weather__city-option" value="Samara">Samara</option>
+                  <option class="weather__city-option" value="Omsk">Omsk</option>
+                  <option class="weather__city-option" value="Rostov-on-Don">Rostov-on-Don</option>
+                  <option class="weather__city-option" value="Krasnoyarsk">Krasnoyarsk</option>
+                  <option class="weather__city-option" value="Voronezh">Voronezh</option>
+                  <option class="weather__city-option" value="Perm">Perm</option>
+                  <option class="weather__city-option" value="Volgograd">Volgograd</option>
+                  <option class="weather__city-option" value="Krasnodar">Krasnodar</option>
+                  <option class="weather__city-option" value="Saratov">Saratov</option>
+                  <option class="weather__city-option" value="Tolyatti">Tolyatti</option>
+                  <option class="weather__city-option" value="Izhevsk">Izhevsk</option>
+                  <option class="weather__city-option" value="Ulyanovsk">Ulyanovsk</option>
+                  <option class="weather__city-option" value="Tomsk">Tomsk</option>
+                </select>
+              </div>
+              <div class="weather__details">
+                <h2 class="weather__details-title">Подробности о погоде</h2>
+                <div class="weather__details-wrapper">
+                  <p class="weather__details-current-weather">Ясно</p>
+                  <span class="weather__details-icon"></span>
+                </div>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Мак. Температура</dt>
+                  <dd class="weather__details-count weather__details-count-temp-feel">19°</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Мин. Температура</dt>
+                  <dd class="weather__details-count weather__details-count-temp-min">15°</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Влажност</dt>
+                  <dd class="weather__details-count weather__details-count-humadity">58%</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Облачность</dt>
+                  <dd class="weather__details-count weather__details-count-cloudy">86%</dd>
+                </dl>
+                <dl class="weather__details-wrapper">
+                  <dt class="weather__details-conditions">Скорость ветра</dt>
+                  <dd class="weather__details-count weather__details-count-wind">5km/h</dd>
+                </dl>
+                </div>
+              </div>
+            </section></div>
+          
+        
+      </main>
+  </body>
+</html>
